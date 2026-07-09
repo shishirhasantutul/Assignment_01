@@ -20,7 +20,7 @@ header{
 text-decoration: none;
 color: black;
 }
-.button{
+.button {
     background-color: #2563EB;
     color: white;
     font-size: 15px;
@@ -28,9 +28,23 @@ color: black;
     margin: 10px;
     padding: 10px 30px;
 }
-.hero{
+.banner{
     background-image: url(assets/banner.jpg);
+    height: 600px;
+    align-items: center;
+    text-align: center;
     background-size: cover;
-    background-position: center;
-    height: 700px;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    background-position: center;   
+}
+.hero{
+    color: white;
+}
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.banner-button{
+    margin-top: 350px;
 }

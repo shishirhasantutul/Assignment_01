@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    padding: 10PX 30px;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.navigation a{
+text-decoration: none;
+color: black;
+}
+.button{
+    background-color: #2563EB;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 30px;
+}
+.hero{
+    background-image: url(assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}

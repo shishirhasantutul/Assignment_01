@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
@@ -10,16 +11,19 @@ header{
     padding: 10PX 30px;
     align-items: center;
 }
-.navigation{
+
+.navigation {
     display: flex;
     list-style: none;
     gap: 20px;
-    
+
 }
-.navigation a{
-text-decoration: none;
-color: black;
+
+.navigation a {
+    text-decoration: none;
+    color: black;
 }
+
 .button {
     background-color: #2563EB;
     color: white;
@@ -28,7 +32,8 @@ color: black;
     margin: 10px;
     padding: 10px 30px;
 }
-.banner{
+
+.banner {
     background-image: url(assets/banner.jpg);
     height: 600px;
     align-items: center;
@@ -36,15 +41,64 @@ color: black;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
-    background-position: center;   
+    background-position: center;
 }
-.hero{
+
+.hero {
     color: white;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 50px;
     margin-bottom: 10px;
 }
-.banner-button{
+
+.banner-button {
     margin-top: 350px;
+}
+
+.speaker h3 {
+    font-size: 20px;
+}
+
+.category {
+    font-size: 10px;
+    color: #2563EB;
+}
+
+.role {
+    font-size: 10px;
+}
+
+.speaker-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1300px;
+    margin: auto;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.speaker {
+    border: 1px solid #0D1B2A;
+    
+}
+.speaker p,.speaker h3{
+    padding-left: 20px;
+}
+
+.speaker img {
+    width: 100%;
+
+}
+.category, h3, .role{
+    margin-top: 10px;
+}.role{
+    margin-bottom: 10px;
 }

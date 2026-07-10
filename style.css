@@ -30,8 +30,9 @@ header {
     color: white;
     font-size: 15px;
     border-radius: 5px;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px 30px;
+    border: none;
 }
 
 .banner {
@@ -41,8 +42,12 @@ header {
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 50px;
     background-position: center;
+    /* padding-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .hero {
@@ -55,7 +60,8 @@ header {
 }
 
 .banner-button {
-    margin-top: 350px;
+    /* margin-top: 350px; */
+    margin-top: 30px;
 }
 
 .speaker h3 {
@@ -188,7 +194,7 @@ ul {
     margin: 25px 0;
 }
 
-ul li::before {
+.normal-card ul li::before {
     content: ".";
     position: absolute;
     left: 0;
@@ -197,7 +203,8 @@ ul li::before {
     font-size: 20px;
 }
 
-ul li {
+.normal-card ul li, 
+.highlighted-card ul li {
     position: relative;
     padding-left: 10px;
     line-height: 20px;
@@ -223,9 +230,6 @@ ul li {
 .navigation li::before {
     content: none;
 }
-/* ==========================================
-   Event Map & FAQ Section Styles
-   ========================================== */
 
 .map-faq-section {
     max-width: 1300px;
@@ -240,7 +244,6 @@ ul li {
     font-weight: 700;
 }
 
-/* ম্যাপ এবং তথ্যের কন্টেইনার (পাশাপাশি আনার জন্য ফ্লেক্স) */
 .map-info-container {
     display: flex;
     gap: 50px;
@@ -255,7 +258,7 @@ ul li {
 .map-image-box img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .faq-info-box {
@@ -268,7 +271,6 @@ ul li {
     font-weight: 700;
 }
 
-/* ছোট ইনফো কার্ডগুলোর জন্য ২ কলামের গ্রিড */
 .info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -329,4 +331,64 @@ ul li {
     font-size: 14px;
     color: #666;
     line-height: 1.6;
+}
+
+.footer {
+    background: #0D1B2A;
+    margin-top: 20px;
+    padding: 20px 70px;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.social-media-icons-a {
+    color: #FFFFFF;
+}
+
+.footer-link {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-link-a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.footer-ul li {
+    list-style: none;
+}
+
+.footer-ul li a {
+    color: white;
+    text-decoration: none;
 }

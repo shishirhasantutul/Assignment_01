@@ -203,7 +203,7 @@ ul {
     font-size: 20px;
 }
 
-.normal-card ul li, 
+.normal-card ul li,
 .highlighted-card ul li {
     position: relative;
     padding-left: 10px;
@@ -356,13 +356,14 @@ ul {
     gap: 35px;
 }
 
-.social-media-icons {
-    display: flex;
-    gap: 5px;
+.social-media-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s ease;
 }
 
-.social-media-icons-a {
-    color: #FFFFFF;
+.social-media-icons a:hover {
+    color: #2563EB;
 }
 
 .footer-link {

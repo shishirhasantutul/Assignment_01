@@ -87,11 +87,9 @@ h2 {
 
 .speaker {
     border: 1px solid #0D1B2A;
-
+    
 }
-
-.speaker p,
-.speaker h3 {
+.speaker p,.speaker h3{
     padding-left: 20px;
 }
 
@@ -99,13 +97,8 @@ h2 {
     width: 100%;
 
 }
-
-.category,
-h3,
-.role {
+.category, h3, .role{
     margin-top: 10px;
-}
-
-.role {
+}.role{
     margin-bottom: 10px;
 }

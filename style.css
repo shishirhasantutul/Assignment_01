@@ -89,9 +89,11 @@ h2 {
 .speaker {
     border: 1px solid #0D1B2A;
     border-radius: 5px;
-    
+
 }
-.speaker p,.speaker h3{
+
+.speaker p,
+.speaker h3 {
     padding-left: 20px;
 }
 
@@ -99,28 +101,37 @@ h2 {
     width: 100%;
 
 }
-.category, h3, .role{
+
+.category,
+h3,
+.role {
     margin-top: 10px;
-}.role{
+}
+
+.role {
     margin-bottom: 10px;
 }
-.all-cards{
+
+.all-cards {
     display: flex;
     justify-content: center;
     align-items: stretch;
     gap: 70px;
-    
+
 }
-h4{
+
+h4 {
     font-size: 50px;
     text-align: center;
     margin-top: 70px;
 }
-.card-head{
+
+.card-head {
     text-align: center;
     margin-bottom: 20px;
 }
-.normal-card{
+
+.normal-card {
     display: flex;
     flex-direction: column;
     width: 290px;
@@ -129,47 +140,55 @@ h4{
     border: 1px solid black;
     border-radius: 5px;
 }
-.highlighted-card{
+
+.highlighted-card {
     background: #0D1B2A;
     color: white;
     display: flex;
     flex-direction: column;
-   width: 290px;
-   min-height: 400px;
+    width: 290px;
+    min-height: 400px;
     padding: 30px;
     border: 1px solid black;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-.card-class{
+
+.card-class {
     color: #2563EB;
 }
-button{
+
+button {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     background: white;
     margin-top: 50px;
 }
-.get-standard{
+
+.get-standard {
     background: white;
     border-color: #2563EB;
     color: #2563EB;
-} 
-.get-pro{
+}
+
+.get-pro {
     background: #2563EB;
     color: white;
     border: none;
 }
-.contact-us{
-background: white;
-border-color: black;
+
+.contact-us {
+    background: white;
+    border-color: black;
 }
-ul{
+
+ul {
     list-style: none;
     padding: o;
     margin: 25px 0;
 }
-ul li::before{
+
+ul li::before {
     content: ".";
     position: absolute;
     left: 0;
@@ -177,24 +196,137 @@ ul li::before{
     color: #2563EB;
     font-size: 20px;
 }
-ul li{
+
+ul li {
     position: relative;
     padding-left: 10px;
     line-height: 20px;
 }
-.normal-card h5, .highlighted-card h5{
+
+.normal-card h5,
+.highlighted-card h5 {
     font-size: 50px;
     font-weight: 500;
 }
-.divider{
+
+.divider {
     width: 100%;
     height: 1px;
     margin: 20px 0;
     background: #e5e7eb;
 }
-.highlighted-card .divider{
+
+.highlighted-card .divider {
     background: rgba(255, 255, 255, .15);
 }
-.navigation li::before{
+
+.navigation li::before {
     content: none;
-} 
+}
+/* ==========================================
+   Event Map & FAQ Section Styles
+   ========================================== */
+
+.map-faq-section {
+    max-width: 1300px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.section-main-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* ম্যাপ এবং তথ্যের কন্টেইনার (পাশাপাশি আনার জন্য ফ্লেক্স) */
+.map-info-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.map-image-box {
+    flex: 1;
+}
+
+.map-image-box img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.faq-info-box {
+    flex: 1;
+}
+
+.faq-info-box h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* ছোট ইনফো কার্ডগুলোর জন্য ২ কলামের গ্রিড */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+}
+
+.info-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.info-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.accordion-container {
+    display: flex;
+    gap: 40px;
+}
+
+.accordion-column {
+    flex: 1;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 20px 0;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.accordion-header span {
+    font-size: 22px;
+    font-weight: 400;
+    color: #666;
+}
+
+.accordion-content {
+    margin-top: 10px;
+}
+
+.accordion-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}

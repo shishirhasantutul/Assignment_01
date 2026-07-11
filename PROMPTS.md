@@ -1,0 +1,1 @@
+What do you think about this picture? According to this content, there is a blank space at the bottom where it says something missing? What information do you think should be there?
